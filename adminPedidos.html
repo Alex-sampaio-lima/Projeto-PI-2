@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Pedidos</title>
+    <link rel="stylesheet" href="style/adminPedidos.css">
+    <link rel="stylesheet" href="style/global.css">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="icon" href="assets/logo_sem_fundo_arredondada.png" type="image/x-icon" style="border-radius: 400px;">
+</head>
+
+<body>
+    <main>
+        <section class="container-principal-admin-pedido">
+            <nav class="container-navbar-pedido-estoque">
+                <div class="container-navbar-title">
+                    <h1 class="navbar-title">Admin</h1>
+                </div>
+                <div class="container-navbar-title-pedido">
+                    <h1 class="navbar-title-pedido">Pedidos</h1>
+                </div>
+                <div class="container-navbar-title-estoque">
+                    <h1 class="navbar-title-estoque">Estoque</h1>
+                </div>
+            </nav>
+            <div class="container-info-form">
+                <div class="container-header-info-pedidos">
+                    <div class="container-title-img">
+                        <h1 class="info-title-pedidos">Olá, LiLi</h1>
+                        <div class="container-img">
+                            <img src="assets/imagemDoUsuario.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="container-info-pedido">
+                    <div class="container-info-pedido-titles">
+                        <div class="container-info-title">
+                            <div class="container-title-number">
+                                <h1 class="title-number">100 Mil</h1>
+                            </div>
+                            <div class="container-title-text">
+                                <h1 class="title-text">Vendidos</h1>
+                            </div>
+                        </div>
+                        <div class="container-info-title">
+                            <div class="container-title-number">
+                                <h1 class="title-number" id="title-text-cancelado">200</h1>
+                            </div>
+                            <div class="container-title-text">
+                                <h1 class="title-text" id="title-text-cancelado">Cancelados</h1>
+                            </div>
+                        </div>
+                        <div class="container-info-title">
+                            <div class="container-title-number">
+                                <h1 class="title-number">10 Mil</h1>
+                            </div>
+                            <div class="container-title-text">
+                                <h1 class="title-text">Ganhos</h1>
+                            </div>
+                        </div>
+                        <div class="container-info-title">
+                            <div class="container-title-number">
+                                <h1 class="title-number" id="title-text-enviado">500</h1>
+                            </div>
+                            <div class="container-title-text">
+                                <h1 class="title-text" id="title-text-enviado">Enviados</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-form-pedido">
+                    <div class="container-title-pedido">
+                        <h1 class="title-pedido">Adicionar Pedido</h1>
+                    </div>
+                    <div class="container-title-cliente">
+                        <h1 class="title-cliente">Dados do Cliente</h1>
+                    </div>
+
+                    <form class="container-inputs" action="" method="post">
+                        <div class="container-form-nome-default">
+                            <div class="container-default">
+                                <label for="nome">Nome</label>
+                                <input class="container-input-default" type="text" name="nome" id="nome"
+                                    placeholder="Ex: Digite o nome do cliente">
+                            </div>
+                            <div class="container-default">
+                                <label for="telefone">Telefone</label>
+                                <input class="container-input-default" type="text" name="telefone" id="telefone"
+                                    placeholder="Ex: Digite o telefone do cliente">
+                            </div>
+                        </div>
+
+                        <div class="container-form-nome-default">
+                            <div class="container-default">
+                                <label for="">Email</label>
+                                <input class="container-input-default" type="email" name="email" id="email"
+                                    placeholder="Ex: Digite o nome E-mail do cliente">
+                            </div>
+                            <div class="container-default">
+                                <label for="cpf">CPF</label>
+                                <input class="container-input-default" type="text" name="cpf" id="cpf"
+                                    placeholder="Ex: Digite o CPF do cliente">
+                            </div>
+                        </div>
+
+                        <div class="container-title-cliente">
+                            <h1 class="title-cliente">Dados do Cliente</h1>
+                        </div>
+
+
+                        <div class="container-form-nome-default">
+                            <div class="container-default">
+                                <label for="tipo">Tipo</label>
+                                <input class="container-input-default" type="tipo" name="tipo" id="tipo"
+                                    placeholder="Ex: Bolo para festa de casamento">
+                            </div>
+                            <div class="container-default">
+                                <label for="formaDePagamento">Forma de pagamento</label>
+                                <input class="container-input-default" type="formaDePagamento" name="formaDePagamento"
+                                    id="formaDePagamento" placeholder="Ex: Débito">
+                            </div>
+                        </div>
+                        <div class="container-form-nome-default">
+                            <div class="container-default">
+                                <label for="valorTotal">Valor Total</label>
+                                <input class="container-input-default" type="valorTotal" name="valorTotal"
+                                    id="valorTotal" placeholder="Ex: 320 R$">
+                            </div>
+                            <div class="container-default">
+                                <label for="status">Status</label>
+                                <input class="container-input-default" type="status" name="status" id="formaDePagamento"
+                                    placeholder="Ex: pendente">
+                            </div>
+                        </div>
+                        <div class="container-form-nome-default">
+                            <div class="container-default">
+                                <label for="observacoes">Observações</label>
+                                <input class="container-input-default" type="observacoes" name="observacoes"
+                                    id="observacoes" placeholder="Ex: Recheio de leite condensado">
+                            </div>
+                            <div class="container-default">
+                                <label for="realizacaoDoPedido">Data da Realização do Pedido</label>
+                                <input class="container-input-default" type="realizacaoDoPedido"
+                                    name="realizacaoDoPedido" id="realizacaoDoPedido" placeholder="Ex: 20/04/2025">
+                            </div>
+                        </div>
+                        <div class="container-btn-submit-form">
+                            <button class="btn-submit-form" type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+        </section>
+    </main>
+</body>
+
+</html>

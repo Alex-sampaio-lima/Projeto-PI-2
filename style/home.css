@@ -14,6 +14,7 @@ header {
     width: 1312px;
     height: 100px;
     border-radius: 10px;
+    margin: 20px 0px;
 }
 
 .container-header-logo {
@@ -63,37 +64,40 @@ header {
     flex-direction: column;
     color: #41271F;
     font-size: 12px;
-    font-family: Inter;
+    font-family: var(--font-primary);
     font-weight: 400;
     word-wrap: break-word;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: var(--Terciary-color-gradient, linear-gradient(180deg, #41271F 0%, #A76450 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.button-franqueado {
-    display: inline-flex;
+.button-login {
+    display: flex;
     justify-content: center;
     align-items: center;
     max-width: 100%;
     width: 180px;
     height: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 13px;
-    padding-bottom: 13px;
-    background: #D9308D;
+    padding: 12px 20px;
+    background: linear-gradient(90deg, #D9308D 0%, #73194B 100%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     overflow: hidden;
     border-radius: 40px;
     outline: 3px #D9D9D9 solid;
     outline-offset: -2px;
     gap: 14px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 2px solid var(--gray-1, #D9D9D9);
 }
 
-.button-franqueado-texto {
+.button-login-texto {
     color: #D9D9D9;
-    font-size: 12px;
+    font-size: 14px;
     font-family: var(--font-primary);
-    font-weight: 700;
+    font-weight: 800;
     word-wrap: break-word;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
@@ -125,8 +129,6 @@ main {
     background: url(assets/img-banner.png) lightgray 50% / cover no-repeat;
     width: 1280px;
     height: 580px;
-    width: 1280;
-    height: 580;
     border-width: 1px;
     border-radius: 30px;
 }
@@ -176,14 +178,20 @@ main {
 }
 
 .title-sabores {
-    color: var(--Terciary-Color, #41271F);
+    color: var(--color-tertiary);
     text-align: center;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* font-family: var(--font-primary); */
+    /* font-family: var(--font-secondary); */
     font-family: var(--font-primary);
     font-size: 36px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    background: linear-gradient(90deg, #41271F 0%, #A76450 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .container-card-sabores {
@@ -212,25 +220,27 @@ main {
     border-left: 1px solid var(--color-primary);
     background: #B3ACAC;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-image: url(assets/Doces/sonho.jpg);
 }
 
 #bolos {
+    background-image: url(../assets/Bolos/bolo-chocolate-com-morango-2.png);
     background-size: cover;
-    background-image: url(assets/Bolos/bolo-chocolate-com-morango-2.png);
 }
 
 #salgados {
-    background-image: url(assets/Salgados/coxinha-2.jpg);
+    background-image: url(../assets/Salgados/coxinha-2.jpg);
     background-size: cover;
 }
 
 #kit-festa {
-    background-image: url(assets/KitFesta.jpg);
+    background-image: url(../assets/KitFesta.jpg);
+    
     background-size: cover;
 }
 
 #doces {
-    background-image: url(assets/Doces/sonho.jpg);
+    background-image: url(../assets/Doces/sonho.jpg);
     background-size: cover;
 }
 
@@ -302,6 +312,7 @@ main {
     align-items: center;
     border-radius: 8px;
     background: var(--background-color, #E5DBD0);
+
 }
 
 .title-sobre {
@@ -315,6 +326,10 @@ main {
     font-style: normal;
     font-weight: 900;
     line-height: normal;
+    background: var(--Terciary-color-gradient, linear-gradient(180deg, #41271F 0%, #A76450 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .container-text-img-sobre {
@@ -380,10 +395,8 @@ main {
     border-radius: 30px;
     border: 4px solid var(--Primary-Color, #D9308D);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-
     background: url(assets/Logo_sem_fundo.jpg) lightgray 50% / cover no-repeat;
 }
-
 
 .container-funcionamento {
     display: flex;
@@ -418,6 +431,10 @@ main {
     line-height: normal;
     text-align: center;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(90deg, #41271F 0%, #A76450 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .container-secoes-atendimento {
@@ -452,7 +469,9 @@ main {
     gap: 15px;
     overflow: hidden;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    background: #402D25;
+    border-radius: 12px;
+    background: linear-gradient(270deg, #36221B 45.67%, #A67560 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .container-title-bolo {
@@ -696,6 +715,9 @@ main {
     border-radius: 12px;
     background: var(--Sextiary-Color, rgba(54, 34, 27, 0.94));
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    background: linear-gradient(270deg, #36221B 45.67%, #A67560 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -893,7 +915,7 @@ footer {
 .text-link {
     display: flex;
     width: 100px;
-    height: 12px;
+    height: 16px;
     flex-direction: column;
     justify-content: center;
     color: var(--Primary-Color, #D9308D);
@@ -904,6 +926,11 @@ footer {
     font-weight: 500;
     line-height: normal;
     text-decoration: none;
+    background: linear-gradient(180deg, #D9308D 0%, #73194B 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 
 #home {
@@ -944,6 +971,7 @@ footer {
     height: 40px;
     padding: 14px 0px;
     gap: 10px;
+
 }
 
 .title-contato {
@@ -959,6 +987,10 @@ footer {
     font-weight: 500;
     line-height: normal;
     text-align: center;
+    background: linear-gradient(180deg, #D9308D 0%, #73194B 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .container-icon-contato {
@@ -1043,6 +1075,10 @@ footer {
     font-weight: 500;
     line-height: normal;
     text-align: center;
+    background: linear-gradient(180deg, #D9308D 0%, #73194B 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .container-info-endereco {

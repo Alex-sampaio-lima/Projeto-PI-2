@@ -14,7 +14,7 @@ main {
     justify-content: center;
     align-items: center;
     width: 1312px;
-    height: 1000px;
+    height: 1050px;
     background-color: #FFF;
     border-radius: 48px;
 }
@@ -99,7 +99,7 @@ main {
     gap: 10px;
     padding: 30px 80px;
     border: 1px solid #FFF;
-    border-bottom: 4px #FFF solid;
+    border-bottom: 3px #FFF solid;
 }
 
 .navbar-title-estoque {
@@ -177,8 +177,8 @@ main {
 
 .icon-header-img {
     display: flex;
-    justify-content: center;
-    height: 54px;
+    height: 60px;
+    /* justify-content: center; */
     /* width: 60px; */
 }
 
@@ -385,7 +385,7 @@ main {
     align-items: center;
     width: 568px;
     height: 160px;
-    gap: 26px;
+    gap: 44px;
 }
 
 .container-form-nome-default {

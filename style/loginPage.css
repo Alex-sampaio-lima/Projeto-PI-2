@@ -10,7 +10,8 @@ main {
     max-width: 100%;
     width: 1312px;
     height: 800px;
-    border: 1px solid rgb(255, 255, 255);
+    border-radius: 40px;
+    /* border: 1px solid rgb(255, 255, 255); */
 }
 
 
@@ -21,6 +22,8 @@ main {
     max-width: 100%;
     width: 784px;
     height: 800px;
+    border-top-left-radius: 60px;
+    border-bottom-left-radius: 60px;
     background-image: url(../assets/fundo-login-rosa.png);
 }
 
@@ -124,6 +127,8 @@ main {
     height: 800px;
     padding: 180px 110px;
     background: #FEFEFF;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
     /* border: 1px solid blue; */
 }
 

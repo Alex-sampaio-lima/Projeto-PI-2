@@ -70,9 +70,12 @@ main {
     border: 1px solid #FFF;
     gap: 10px;
     border: 1px solid #FFF;
+    transition: transform 0.5s ease;
 }
 
-.container
+.container-navbar-title-pedido:hover {
+    transform: scale(1.05);
+}
 
 .navbar-title-pedido {
     display: flex;
@@ -102,6 +105,11 @@ main {
     padding: 30px 80px;
     border: 1px solid #FFF;
     border-bottom: 3px #FFF solid;
+    transition: transform 0.5s ease;
+}
+
+.container-navbar-title-estoque:hover {
+    transform: scale(1.05);
 }
 
 .navbar-title-estoque {
@@ -191,6 +199,11 @@ main {
     padding: 5px 44px;
     align-items: center;
     gap: 10px;
+    transition: transform 0.3s ease;
+}
+
+.container-img:hover {
+    transform: scale(1.15);
 }
 
 .container-img img {
@@ -434,6 +447,11 @@ main {
     border-radius: 5px;
     border: 1px solid #DADADA;
     background: #F9FAFB;
+    transition: transform 0.5s ease;
+}
+
+.container-input-default:hover {
+    transform: scale(1.05);
 }
 
 .container-input-default::placeholder {
@@ -468,7 +486,6 @@ main {
     justify-content: center;
     align-items: center;
     gap: 10px;
-
     color: #FFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: var(--font-secondary);
@@ -478,4 +495,9 @@ main {
     line-height: normal;
     letter-spacing: 0.2px;
     border: none;
+    transition: transform 0.3s ease;
+}
+
+.btn-submit-form:hover {
+    transform: scale(1.10);
 }

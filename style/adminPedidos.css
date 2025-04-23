@@ -202,7 +202,7 @@ main {
 }
 
 .container-img:hover {
-    transform: scale(1.10);
+    transform: scale(1.15);
 }
 
 .container-img img {
@@ -292,7 +292,8 @@ main {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    background: linear-gradient(90deg, #39D1A3 0%, #1D6B53 100%);
+    /* background: linear-gradient(90deg, #39D1A3 0%, #1D6B53 100%); */
+    background: linear-gradient(90deg, #000000 0%, #1D6B53 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

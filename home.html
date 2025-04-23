@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="icon" href="assets/logo_sem_fundo_arredondada.png" type="image/x-icon" style="border-radius: 400px;">
+    <script src="index.js"></script>
 </head>
 
 <body>
@@ -20,7 +21,14 @@
             <div class="container-header-logo">
                 <img class="header-logo-img" src="assets/Logo_sem_fundo.jpg" alt="">
             </div>
-            <div class="container-header-titulos">
+
+            <div class="hamburguer" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="container-header-titulos hidden">
                 <div class="container-header-menu">
                     <p class="header-texto">Inicio</p>
                 </div>
@@ -34,6 +42,7 @@
                     <p class="header-texto">Atendimento</p>
                 </div>
             </div>
+
             <button type="button" class="button-login">
                 <a class="button-login-texto" href="loginPage.html">Login</a>
             </button>

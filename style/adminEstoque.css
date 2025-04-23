@@ -72,6 +72,8 @@ main {
     border: 1px solid #FFF;
 }
 
+.container
+
 .navbar-title-pedido {
     display: flex;
     width: 140px;
@@ -124,7 +126,7 @@ main {
     height: 992px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1px;
+    gap: 22px;
 }
 
 .container-header-info-pedidos {
@@ -204,7 +206,7 @@ main {
     overflow: hidden;
     align-items: center;
     align-self: stretch;
-    height: 158px;
+    height: 172px;
     width: 1012px;
     padding: 14px 16px;
     background: #FAFAFA;
@@ -383,9 +385,11 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     width: 568px;
-    height: 160px;
-    gap: 44px;
+    height: 478px;
+    /* gap: 44px; */
+    /* border: #0061FE 1px solid; */
 }
 
 .container-form-nome-default {
@@ -433,7 +437,7 @@ main {
 }
 
 .container-input-default::placeholder {
-    color: #848181;
+    color: #9e9e9e;
     font-family: "Abhaya Libre";
     font-size: 13px;
     font-style: normal;
@@ -458,7 +462,7 @@ main {
     width: 88px;
     height: 37px;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 25px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     background: linear-gradient(180deg, #D9308D 50%, #73194B 100%);
     justify-content: center;

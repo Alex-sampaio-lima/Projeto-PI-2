@@ -15,11 +15,11 @@ header {
     height: 6.25rem;
     border-radius: 0.625rem;
     margin-bottom: 1.25rem;
-    max-width: 82rem;
+    max-width: 100%;
     flex-wrap: wrap;
     height: auto;
     gap: 1rem;
-    position: fixed;
+    /* position: fixed; */
 }
 
 
@@ -40,12 +40,20 @@ header {
 }
 
 .container-header-titulos {
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(68px, 1fr));
+    justify-items: center;
     align-items: center;
-    width: 31.6875rem;
-    height: 3.125rem;
+    grid-gap: 10px;
+
+    width: 508px;
+    height: 68px;
     gap: 1rem;
+    /* border: 1px solid; */
 }
 
 .container-header-menu {
@@ -128,7 +136,7 @@ main {
     background: #E5DBD0;
     border-bottom: 0.0625rem solid #41271F;
     margin-bottom: 0.625rem;
-    margin-top: 8.875rem;
+    /* margin-top: 142px; */
 }
 
 .img-banner {
@@ -175,31 +183,6 @@ main {
     gap: 4.125rem;
     border-bottom: 0.0625rem solid var(--Terciary-Color, #41271F);
     background: var(--Background-color, #E5DBD0);
-    min-height: 23vh;
-    height: auto;
-
-    /* height: 37.5rem; */
-
-    /* justify-content: center; */
-    /* min-height: 50vh; */
-    /* height: auto;
-
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 2rem 1rem;
-    gap: 2rem;
-    border-bottom: 1px solid var(--Terciary-Color, #41271F);
-    background: var(--Background-color, #E5DBD0);
-    
-    /* Transição suave */
-    /* transition: all 0.3s ease-in-out; */
-
-    /* Altura automática com mínimo */
-    /* Altura mínima relativa à tela */
-    /* min-height: 50vh; */
-    /* height: auto; */
 
 }
 
@@ -208,7 +191,6 @@ main {
     width: 28.75rem;
     height: 2.75rem;
     justify-content: center;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -216,8 +198,6 @@ main {
     color: var(--color-tertiary);
     text-align: center;
     text-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
-    /* font-family: var(--font-primary); */
-    /* font-family: var(--font-secondary); */
     font-family: var(--font-primary);
     font-size: 2.25rem;
     font-style: normal;
@@ -335,6 +315,7 @@ main {
 
 .container-sobre {
     display: flex;
+    max-width: 100%;
     width: 82rem;
     height: 38rem;
     padding: 1.5rem 1.25rem;
@@ -344,6 +325,7 @@ main {
     border-bottom: 0.0625rem solid var(--Terciary-Color, #41271F);
     background: var(--background-color);
     margin-top: 0.625rem;
+    /* border: 10px solid rgb(95, 22, 179); */
 }
 
 .container-title-sobre {
@@ -379,6 +361,7 @@ main {
     justify-content: space-between;
     align-items: flex-start;
     align-self: stretch;
+    max-width: 100%;
     width: 79.5rem;
     height: 28rem;
     gap: 8.75rem;
@@ -403,6 +386,7 @@ main {
     width: 31.875rem;
     height: 28rem;
     gap: 0.625rem;
+    min-width: fit-content;
 }
 
 .text-sobre {
@@ -421,6 +405,8 @@ main {
 
 .container-img-sobre {
     display: flex;
+    min-width: 50%;
+    max-width: 100%;
     width: 34.375rem;
     height: 28rem;
     padding: 0rem 4.6875rem;
@@ -430,9 +416,11 @@ main {
 }
 
 .img-sobre {
-    max-width: 100%;
-    width: 23.75rem;
-    height: 22.5rem;
+    width: 100%;
+    height: auto;
+    /* max-width: 100%; */
+    /* width: 23.75rem; */
+    /* height: 22.5rem; */
     align-self: stretch;
     border-radius: 1.875rem;
     border: 0.25rem solid var(--Primary-Color, #D9308D);
@@ -445,10 +433,11 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     background-color: var(--background-color);
     max-width: 100%;
     width: 82rem;
-    height: 37.5rem;
+    height: auto;
     overflow: hidden;
     padding: 1.75rem 1.625rem;
     border-bottom: 0.0625rem solid var(--color-tertiary);
@@ -484,6 +473,7 @@ main {
     justify-content: center;
     align-items: center;
     align-self: stretch;
+    flex-wrap: wrap;
     max-width: 100%;
     width: 78.75rem;
     /* height: 28rem; */
@@ -855,23 +845,25 @@ footer {
 }
 
 .container-logo-contato-endereco {
-    /* display: grid;
     display: flex;
     justify-content: center;
-    align-items: center; */
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    align-items: center;
     column-gap: 50px;
+    max-width: 100%;
+    max-width: 100%;
+    width: 78.75rem;
+    height: 18.75rem;
+    gap: 1.25rem;
+    /* background: var(--background-color); */
+    overflow: hidden;
+    /* border: 1px solid var(--color-primary); */
+
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-template-rows: 200px;
     justify-items: center;
     max-width: 100%;
-    /* grid-gap: 10px; */
-    /* max-width: 100%; */
-    /* width: 78.75rem; */
-    /* height: 18.75rem; */
-    /* gap: 1.25rem; */
-    /* background: var(--background-color); */
-    /* overflow: hidden; */
-    /* border: 0.0625rem solid var(--color-primary); */
+    grid-gap: 10px; */
 }
 
 .container-logo-texto {
@@ -1005,11 +997,11 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: column;
-    max-width: 100%;
     width: 23.75rem;
     height: 18.75rem;
     padding: 0.625rem 1rem;
     border-radius: 0.25rem;
+    /* max-width: 100%; */
     /* border: 0.0625rem solid blue; */
 }
 
@@ -1138,7 +1130,8 @@ footer {
     align-items: center;
     align-self: stretch;
     width: 21.75rem;
-    height: 11.625rem;
+    /* height: 11.625rem; */
+    height: auto;
     gap: 0.9375rem;
     border-radius: 0.25rem;
     padding: 1.75rem 0.6875rem;
@@ -1172,11 +1165,12 @@ footer {
     overflow: hidden;
     padding: 0rem 0.5rem;
     border-top: 0.0625rem solid var(--Primary-Color, #D9308D);
-    justify-content: center;
+    max-width: 100%;
+    justify-content: space-between;
     align-items: center;
-    gap: 39.375rem;
     margin-top: 0.625rem;
     border-top: 0.0625rem solid var(--color-primary);
+    /* gap: 39.375rem; */
 }
 
 .container-text-direitos {
@@ -1224,19 +1218,27 @@ footer {
 }
 
 
-@media (max-width:768px) {
+@media (max-width:1100px) {
 
+    /* CABEÇALHO */
     header {
-        height: 300px;
-        width: 760px;
+        /* height: 300px; */
+        /* width: 760px; */
+        /* justify-content: normal; */
     }
 
     .container-header {
-        display: flex;
+        /* display: flex; */
         justify-content: space-between;
-        padding: 0px 80px 0px 20px;
-        width: 760px;
-        height: 268px;
+        padding: 0px 20px 0px 20px;
+        width: 100vw;
+        height: 140px;
+        /* border: 1px solid blue; */
+
+    }
+
+    .container-header-titulos {
+        display: none;
     }
 
     .button-login {
@@ -1261,7 +1263,7 @@ footer {
 
     /* menu escondido por padrão */
     .nav-links {
-        display: flex;
+        /* display: flex; */
         flex-direction: column;
         gap: 1rem;
         margin-top: 1rem;
@@ -1270,6 +1272,8 @@ footer {
     .hidden {
         display: none;
     }
+
+    /* SEÇÃO BANNER */
 
     .login-btn {
         background: linear-gradient(to right, #ec4899, #8b008b);
@@ -1283,18 +1287,21 @@ footer {
     .container-banner {
         width: 760px;
         height: 468px;
+        max-width: 100%;
         margin-top: 0px;
     }
 
     .img-banner {
         width: 726px;
-        height: 400px;
+        height: 344px;
+        min-width: 100%;
     }
 
     .container-sabores {
-        display: flex;
+        /* display: flex; */
         align-items: center;
         width: 760px;
+        padding-bottom: 1.875rem;
         /* height: 65rem; */
         /* min-height: 40vh; */
     }
@@ -1306,52 +1313,65 @@ footer {
         justify-items: center;
     }
 
+    .title-sabores {
+        font-size: 28px;
+    }
+
     .container-sobre {
-        display: flex;
+        /* display: flex; */
         flex-direction: column;
         align-items: center;
-        /* border: #000 1px solid; */
         width: 760px;
-        height: 48vh;
+        height: auto;
+        /* border: #000 1px solid; */
     }
 
     .container-text-img-sobre {
-        display: flex;
+        /* display: flex; */
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        width: 760px;
-        height: 38vh;
+        width: 760%;
+        height: 54vh;
         gap: 0px;
+
     }
 
     .container-text-sobre {
-        width: 760px;
+        align-items: flex-start;
+        width: 76%;
+        height: 50%;
     }
 
     .text-sobre {
-        width: 620px;
-        height: 318px;
+        width: 68%;
+        height: 98%;
         /* border: 1px solid blue; */
     }
 
     .container-img-sobre {
-        display: flex;
+        /* display: flex; */
         align-items: center;
         justify-content: center;
+        background: none;
+    }
+
+    .img-sobre {
+        width: 100%;
+        height: auto;
     }
 
     .container-funcionamento {
-        display: flex;
-        width: 760px;
-        height: 62rem;
+        /* display: flex; */
+        width: 40rem;
+        height: auto;
         justify-content: flex-start;
-        /* border: 1px solid black; */
+        border: 1px solid black;
     }
 
 
     .container-secoes-atendimento {
-        display: flex;
+        /* display: flex; */
         flex-wrap: wrap;
         max-height: fit-content;
     }
@@ -1362,10 +1382,39 @@ footer {
 
     .container-info {
         width: 760px;
-        height: 50vh;
+        height: auto;
+        /* border: 1px solid black; */
+        padding: 0px;
+    }
+
+    .container-logo-contato-endereco {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        height: 100%;
+        /* border: 1px solid blue; */
+    }
+
+    .container-logo-texto {
+        height: 30rem;
+        /* border: 1px solid blue; */
     }
 
     .container-direitos {
         width: 760px;
+        justify-content: normal;
+        gap: 4.625rem;
+        max-width: 100%;
+    }
+
+    .container-text-direitos {
+        max-width: 100%;
+    }
+
+    .container-text-politica {
+        max-width: 100%;
     }
 }
+
+
+@media (max-width: 425px) {}

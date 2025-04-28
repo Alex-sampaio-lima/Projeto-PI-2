@@ -1388,7 +1388,7 @@ footer {
     }
 
     .container-card-sabores {
-        grid-gap: 30px;
+        /* grid-gap: 30px; */
     }
 
     .container-text-img-sobre {
